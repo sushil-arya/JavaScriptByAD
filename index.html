@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="root">Hello 11 Dec 2024</h1>
+    <h2>Variables var, let & const </h2>
+    <h3>Associativity and Precedence of operators </h3>
+    <h4>object.member() --- console.log() </h4>
+    <h4>object.member() --- document.getElementById() </h4>
+    <h4>object.member() --- document.write() </h4>
+    <h4 id="note">NOTE: constant variables can't be changed & must be intilize at the time of declaration </h4>
+
+    <br><hr>
+    
+    <div id="box">
+        <h1 id="heading"> script code </h1>
+        <p id="scriptjs">
+            <span style="color:#fff;">document.</span><span style="color:#ffc400">getElementById(</span><span style="color:#069406;">"root"</span><span style="color:#ffc400">)</span><span style="color:#fff;">.</span><span style="color:#74d1ff;">innerHTML </span><span style="color:#ffc400">=</span> <span style="color:#069406;">"Hello Sushil From JS"</span><span style="color:#fff;">;</span> 
+            
+            <br><br>
+            <span style="color:#fff;">document.</span><span style="color:#ffc400">getElementById(</span><span style="color:#069406;">"note"</span><span style="color:#ffc400">)</span><span style="color:#fff;">.</span><span style="color:#74d1ff;">style<span style="color:#fff;">.</span>color </span><span style="color:#ffc400">=</span> <span style="color:#069406;">"red"</span><span style="color:#fff;">;</span>
+
+            document.getElementById("note").style.color = "red";
+            <br><br> 
+            //declaring variables <br>
+            var x; <br>
+            let y;<br>
+            const z = "My name is Sushil";<br>
+    
+            //assigning values <br>
+            x = 10; <br>
+            y = 20; <br>
+    
+            //arithmetic operations
+            <br>
+            x = x + y; <br>
+            //displaying values
+            <br>
+            //object.member
+            <br>
+            console.log(x); <br>
+
+    
+            x = x - y; <br>
+            //displaying values
+            <br>
+            console.log(x); <br>
+    
+            x = x * y;<br>
+            //displaying values
+            <br>
+            console.log(x);
+            <br>
+            
+            x = x % y;
+            <br>
+            //displaying values
+            <br>
+            console.log(x);
+             <br>
+    
+            x = x / y;
+            <br>
+
+            //displaying values
+            <br>
+            console.log(x);
+            <br>
+    
+            //displaying values
+            <br>
+            console.log(z);
+            <br>
+        </p>
+    </div>
+
+
+    <script>
+        document.getElementById("heading").style.color  = "#fff";
+        document.getElementById("box").style.padding  = "20px";
+
+        // document.getElementsByClassName("colwhite").setAttribute("style", "color:#fff;");
+
+        
+
+        //changing content of heading
+        document.getElementById("root").innerHTML = "Hello Sushil From JS";
+
+        //changing background color of div
+        document.getElementById("box").style.backgroundColor = "#0f334a";
+
+        //changing font color
+        document.getElementById("note").style.color = "red";
+
+        //changing font size of paragraph
+        document.getElementById("scriptjs").style.fontSize = "20px";
+
+        //changing font family of body
+        document.body.style.fontFamily = "Arial";
+
+        //declaring variables
+        var x;
+        let y;
+        const z = "My name is Sushil";
+
+        //assigning values
+        x = 10;
+        y = 20;
+
+        //arithmetic operations
+        x = x + y;
+        //displaying values
+        //object.member
+        console.log(x);
+
+        x = x - y;
+        //displaying values
+        console.log(x);
+
+        x = x * y;
+        //displaying values
+        console.log(x);
+        
+        x = x % y;
+        //displaying values
+        console.log(x);
+
+        x = x / y;
+        //displaying values
+        console.log(x);
+
+        //displaying values
+        console.log(z);
+
+    </script>
+
+</body>
+</html>
