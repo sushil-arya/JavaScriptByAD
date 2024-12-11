@@ -6,8 +6,21 @@
     <title>Git update</title>
 </head>
 <body>
-    <h1>Hello Git Update day04</h1>
+    <h1>Function : The reusable block of code that performs a specific task.</h1>
 
+    <br>
+    
+    <h2>Camel Case:</h2>
+    variable (var and let) and function will follow this convention rule
+
+    <h2>Snake Case:</h2>
+    const PI = 3.14;
+    
+    UPPERCASE rule for const variable
+    
+
+    
+    <br>
 
 
     <script>
@@ -43,12 +56,26 @@
 
 
     //1. Function definition for one time
-    function myFunction(name) { //formal argument
-        console.log(name);
+    function myFunctionA(name) { //formal argument
+        console.log("Hello "+name);
+        myFunctionB("Arya");
     }
 
-    //2. Function call for manuy times  
-    myFunction('Sushil'); //actual arguments
+    //2. Function calling for manuy times  
+    myFunctionA('Sushil'); //actual arguments
+
+    //1. Funtion Definition
+    function myFunctionB(msg){
+        console.log(msg+ ' Hello are you ?');
+    }
+
+    //2. Function Calling
+    myFunctionB("Sushil"); //actual arguments
+    myFunctionA('John'); //actual
+
+    
+
+
     </script>
 </body>
 </html>
