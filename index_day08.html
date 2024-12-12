@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 08 Fat Arrow Function</title>
+</head>
+<body>
+
+    <h1>Day 08 Fat Arrow Function</h1>
+    
+    <script>
+        //Fat Arrow or Arrow Function
+
+        // Normal Function
+        function sayHello(){
+            console.log("Hello!");
+        }
+        
+        // Fat Arrow Function
+        let sayHello2 = () => {
+            console.log("Hello FatArrow!");
+        }
+
+        //Fat Arrow Function with parameters        
+        let sayHello3 = (name) => {
+            console.log("Hello FatArrow " + name + "!");
+        }
+
+        //Fat Arrow Function with parameters and return value
+        let sayHello4 = (name) => {
+            return "Hello FatArrow " + name + "!";
+        }
+        
+        // Call the functions
+        sayHello();
+        sayHello2();
+        sayHello3("Sushil");
+        console.log(sayHello4("Sushil"));
+
+        // ... spread operator
+
+        let a = ['Java','is'];
+        let b = [...a,'programing'];
+        let c = [...b,'language'];
+        let d = [...c,"."];
+
+        console.log(d);
+
+        //... spread operator + one line santance
+
+        var paragraph = '';
+        for(var i=0; i<d.length; i++)
+        {   
+           // console.log(d[i]);
+
+            paragraph += d[i]+' ';
+            
+        }
+
+        console.log(paragraph);
+
+    </script>
+</body>
+</html>
