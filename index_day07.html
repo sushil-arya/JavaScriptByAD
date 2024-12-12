@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 07 Function, Object & Array</title>
+</head>
+<body>
+    <h1>Day 07 Function, Object & Array</h1>
+
+    <h2>Function are of Two types <br> A reuable block of code</h2>
+    <ol>
+        <li> Pre Defined Function</li>
+        <li> User Defined Function</li>
+    </ol>
+
+
+
+    <script>
+        //array holding students names
+
+        let students = ["John","Rohit","Mohan","Jack","Sushil"];
+
+        console.log('Hello '+students[4]+' , how are you?');
+
+        //function to display student names
+        function displayStudents(s) {
+            for (var i=0; i<=s.length; i++) {
+                console.log(s[i]);
+            }
+        }
+
+        displayStudents(students);
+
+
+        function displayStudents2(msg){
+            console.log('Hello '+ msg +' , good morning!');
+        }
+
+        for(var i=0; i<students.length; i++){
+            displayStudents2(students[i]);
+        }
+
+
+    </script>
+</body>
+</html>
