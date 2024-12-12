@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 06 - Function A-Z</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+        <script>
+            //1. Function Definition One time process
+            //2. Function Calling many time process
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Day 06 - Function A-Z <br>
+            A function may return something
+        </h1>
+
+        <hr>
+        <h1>
+            Function may return some values
+        </h1>
+
+        <ol>
+            <li>Integer</li>
+            <li>Float/double</li>
+            <li>String</li>
+            <li>Function itself</li>
+        </ol>
+
+        <br>
+        <script>
+            //1. Function Definition One time process
+            //proper naming convention i.e. function name must be wrritten in camelCase
+            function myFunctionA(a,b){//formal arguments/parameters
+
+                //function body
+                return a+b;
+            }
+
+            //2. Function Calling many time process
+            // proper naming convention i.e. varibale name must be written in camelCase
+            let myFunA = myFunctionA(10,20);//actual arguments/parameter 
+            console.log(myFunA);
+
+            //function as agrument
+
+            let myNestedFunA = myFunctionA(50,myFunctionA(50,myFunctionA(60,myFunctionB(40,60))));//nested function
+            console.log(myNestedFunA);
+
+
+            
+
+            /*********** function 2**************/
+            //1. funciton definition
+            //proper naming convention i.e. function name must be wrritten
+
+            function myFunctionB(a,b){//formal aguments/parameter
+                //function body
+                return a-b;
+            }
+
+            //2. function calling
+            //proper naming convention i.e. function name must be written in camelCase
+            let myFunB = myFunctionB(20,10);
+            console.log(myFunB);
+
+             /*********** function 3**************/
+            //1. funciton definition
+            //proper naming convention i.e. function name must be wrritten
+            function myFunctionC(a,b){//formal aguments/parameter
+                //function body
+                return a*b;
+            }
+
+            //2. function calling
+            //proper naming convestion i.e. function name must be written in camelCase
+            let myFunC = myFunctionA(20,myFunctionB(60,myFunctionC(60,myFunctionA(60,20))));
+            console.log(myFunC);
+
+            
+
+
+        </script>
+    </body>
+</html>
